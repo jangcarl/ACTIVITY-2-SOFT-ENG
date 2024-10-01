@@ -1,5 +1,4 @@
 <?php  
-// Define the menu items
 $menu = [
     ['name' => 'Burger', 'price' => 50],
     ['name' => 'Fries', 'price' => 70],
@@ -34,8 +33,7 @@ $menu = [
             </tr>
         <?php endforeach; ?>
     </table>
-
-    <!-- The form sends data to Menu_handleForm.php for processing -->
+    
     <form method="POST" action="Menu_handleForm.php">
         <p>
             <label for="order">Choose your order: </label>

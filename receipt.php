@@ -1,9 +1,8 @@
 <?php
-session_start(); // Start the session to retrieve data
+session_start(); 
 
-// Check if session data is available
 if (!isset($_SESSION['order'], $_SESSION['quantity'], $_SESSION['price'], $_SESSION['cash'], $_SESSION['totalCost'])) {
-    header('Location: Menu_index.php'); // Redirect to Menu_index.php if no data
+    header('Location: Menu_index.php');
     exit();
 }
 
@@ -55,6 +54,6 @@ $totalCost = $_SESSION['totalCost'];
 </html>
 
 <?php
-// Clear session data after displaying the receipt
+
 session_unset();
 session_destroy();
